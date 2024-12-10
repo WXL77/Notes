@@ -151,19 +151,18 @@
 </details>
 
 <details><summary>引用链接</summary>
-
+使用引用链接能达到复用的目的，一般把全文所有的URL标识符统一放在文章末尾，这样看起来比较干净。除了干净之外，它还能达到复用的目的，比如你在多个地方想使用同一个链接，那么文内使用标识符，只在最底部给标识符定义出实际的URL链接即可，类似编程语言中的变量。
+  
 - **代码**
   
   ```
   [他的博客][boke]
   
-  [boke]: http://blog.csdn.net/guodongxiaren
+  [boke]: http://blog.csdn.net/guodongxiaren（统一放在文末）
   ```
 - **效果**
   
   [他的博客][boke]
-  
-  [boke]: http://blog.csdn.net/guodongxiaren
   
 </details>
 
@@ -172,21 +171,21 @@
 - **代码**
   
   ```
-  ![baidu](http://www.baidu.com/img/bdlogo.gif "百度logo")	
+  [![baidu-logo]](http://www.baidu.com)
+
+  [baidu-logo]: http://www.baidu.com/img/bdlogo.gif（统一放在文末）
   ```
 - **效果**
   
   [![baidu-logo]](http://www.baidu.com)
-
-  [baidu-logo]: http://www.baidu.com/img/bdlogo.gif
   
 </details>
 
 
 
-
-
-
+被引用的链接
+[boke]: http://blog.csdn.net/guodongxiaren
+[baidu-logo]: http://www.baidu.com/img/bdlogo.gif "百度logo"
 
 
   
