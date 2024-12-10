@@ -158,7 +158,7 @@
   ```
   [他的博客][boke]
   
-  [boke]: http://blog.csdn.net/guodongxiaren（统一放在文末）
+  [boke]: http://blog.csdn.net/guodongxiaren（统一放在文末，运行后被隐藏）
   ```
 - **效果**
   
@@ -173,7 +173,7 @@
   ```
   [![baidu-logo]](http://www.baidu.com)
 
-  [baidu-logo]: http://www.baidu.com/img/bdlogo.gif（统一放在文末）
+  [baidu-logo]: http://www.baidu.com/img/bdlogo.gif（统一放在文末，运行后被隐藏）
   ```
 - **效果**
   
@@ -182,8 +182,8 @@
 </details>
 
 
-
-被引用的链接  
+***
+**以下是被引用的链接**  （运行后被隐藏）
 
 [boke]: http://blog.csdn.net/guodongxiaren  
 
