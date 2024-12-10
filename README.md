@@ -4,7 +4,7 @@
 
 ## 目录
 - github探索
-- [markdown学习](https://github.com/WXL77/Notes/blob/main/markdown%E8%AF%AD%E6%B3%95)
+- [markdown学习]([https://github.com/WXL77/Notes/blob/main/markdown%E8%AF%AD%E6%B3%95](https://github.com/WXL77/Notes/blob/main/markdown%E8%AF%AD%E6%B3%95.md))
 - java学习
 - sql学习
 - python学习
