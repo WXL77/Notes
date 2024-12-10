@@ -133,10 +133,10 @@
 - **代码**
   
   ```
-  [我的博客](http://blog.csdn.net/guodongxiaren "悬停显示")
+  [他的博客](http://blog.csdn.net/guodongxiaren "悬停显示")
   ```
 - **效果**  
-  [我的博客](http://blog.csdn.net/guodongxiaren "悬停显示")
+  [他的博客](http://blog.csdn.net/guodongxiaren "悬停显示")
 </details>
 
 <details><summary>链接本仓库里的URL</summary>
@@ -144,10 +144,10 @@
 - **代码**
   
   ```
-  [我的简介](/example/profile.md)
+  [他的简介](/example/profile.md)
   ```
 - **效果**  
-  [我的简介](/example/profile.md)
+  [他的简介](/example/profile.md)
 </details>
 
 <details><summary>引用链接</summary>
@@ -155,14 +155,30 @@
 - **代码**
   
   ```
-  [我的知乎][boke]
+  [他的博客][boke]
+  
   [boke]: http://blog.csdn.net/guodongxiaren
   ```
 - **效果**
   
-  [我的博客][boke]
+  [他的博客][boke]
   
   [boke]: http://blog.csdn.net/guodongxiaren
+  
+</details>
+
+<details><summary>图片链接</summary>
+
+- **代码**
+  
+  ```
+  ![baidu](http://www.baidu.com/img/bdlogo.gif "百度logo")	
+  ```
+- **效果**
+  
+  [![baidu-logo]](http://www.baidu.com)
+
+  [baidu-logo]: http://www.baidu.com/img/bdlogo.gif
   
 </details>
 
