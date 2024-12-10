@@ -1,17 +1,17 @@
 # 文字
-### 换行
+<details> <summary>换行</summary>  
+  
 - **代码**
   ```
       法一  
-      第一行  
-      第二行
-  
-      法二  
       在上一行文本后面补两个空格，这样下一行的文本就换行了
 
-      法三
+      法二
       在两行文本直接加一个空行  
       也能实现换行效果，不过这个行间距有点大
+
+      法三<br>
+      在每行后加<br>也可实现换行效果
   ```
 
 - **效果**  
@@ -20,8 +20,11 @@
   第三行
 
   第四行
-  
-### 标题
+
+</details>
+
+<details> <summary>标题</summary>  
+
 - **代码**
   ```
       # 一级标题
@@ -40,12 +43,13 @@
   ##### 五级标题
   ###### 六级标题
 
-### 文本
+</details>
+
+<details> <summary>文本块</summary>  
 
   - 普通文本<br>
   
     一段普通的文本  
-    换行test
 
   - 单行文本
     ```
@@ -56,9 +60,100 @@
     方法：
     使用一对各三个的反引号
     ```
-### 文字高亮
+</details>
 
-文字高亮功能能使行内部分文字高亮，使用一对反引号<br>
- `学习` `编程`
-    
+<details> <summary>文字高亮</summary> 
+  
+- **代码**
+  ```
+  文字高亮功能能使行内部分文字高亮，使用一对反引号
+   `学习` `编程`
+  ```
+
+- **效果**  
+  `学习` `编程`
+
+ </details>
+
+ <details> <summary>斜体、粗体、删除线</summary>
+
+ - **代码**
+   ```
+   *斜体1*
+   _斜体2_
+    **粗体1**
+    __粗体2__
+    ~~删除线~~
+    ***斜粗体1***
+    ___斜粗体2___
+    ***~~斜粗体删除线1~~***
+    ~~***斜粗体删除线2***~~
+    ```
+- **效果**  
+  *斜体1*  
+  _斜体2_  
+  **粗体1**  
+  __粗体2__  
+  ~~删除线~~  
+  ***斜粗体1***  
+  ___斜粗体2___  
+  ***~~斜粗体删除线1~~***  
+  ~~***斜粗体删除线2***~~
+
+   </details>
+
+# 图片
+<details><summary>代码</summary>
+  
+  ```
+  基本格式：  
+  ![alt](URL title)
+
+  alt和title即对应HTML中的alt和title属性（都可省略）：  
+  alt表示图片显示失败时的替换文本  
+  title表示鼠标悬停在图片时的显示文本（注意这里要加引号）
+ 
+  URL即图片的url地址，如果引用本仓库中的图片，直接使用相对路径就可了，
+  如果引用其他github仓库中的图片要注意格式，即：仓库地址/raw/分支名/图片路径，如：
+  https://github.com/guodongxiaren/ImageCache/raw/master/Logo/foryou.gif
+  ```
+
+</details>
+
+<details><summary>效果</summary>
+  
+![baidu](http://www.baidu.com/img/bdlogo.gif "百度logo")  
+
+</details>
+
+# 链接
+
+<details><summary>链接外部URL</summary>
+  
+- **代码**
+  
+  ```
+  [我的博客](http://blog.csdn.net/guodongxiaren "悬停显示")
+  ```
+- **效果**  
+  [我的博客](http://blog.csdn.net/guodongxiaren "悬停显示")
+</details>
+
+<details><summary>链接本仓库里的URL</summary>
+
+- **代码**
+  
+  ```
+  [我的博客](http://blog.csdn.net/guodongxiaren "悬停显示")
+  ```
+- **效果**  
+  [我的简介](/example/profile.md)
+</details>
+
+  
+
+
+
+
+
   
