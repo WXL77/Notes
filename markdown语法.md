@@ -150,6 +150,22 @@
   [我的简介](/example/profile.md)
 </details>
 
+<details><summary>引用链接</summary>
+
+- **代码**
+  
+  ```
+  [我的知乎][boke]
+  [boke]: http://blog.csdn.net/guodongxiaren
+  ```
+- **效果**
+  
+  [我的博客][boke]
+  
+  [boke]: http://blog.csdn.net/guodongxiaren
+  
+</details>
+
 
 
 
