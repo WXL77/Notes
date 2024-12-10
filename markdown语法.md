@@ -144,13 +144,24 @@
 - **代码**
   
   ```
-  [我的博客](http://blog.csdn.net/guodongxiaren "悬停显示")
+  [我的简介](/example/profile.md)
   ```
 - **效果**  
   [我的简介](/example/profile.md)
 </details>
 
+<details><summary>图片链接</summary>
+
+- **代码**
   
+  ```
+  [![weibo-logo]](http://weibo.com/linpiaochen)
+  
+  ```
+- **效果**  
+  [![weibo-logo]](http://weibo.com/linpiaochen)
+</details>
+
 
 
 
