@@ -280,7 +280,41 @@
   ```
 </details>
 
+# 表格
+<details><summary>创建表格</summary>
 
+- **代码**
+  ```
+  请使用三个或多个连字符（---）创建每列的标题，并使用管道（|）分隔每列  
+  | 标题一 | 标题二 |
+  | ------ | ------|
+  | Header | Title |
+  | Paragraph | Text |
+  ```
+- **效果**
+  | 标题一 | 标题二 |
+  | ------ | ------|
+  | Header | Title |
+  | Paragraph | Text |
+  
+</details>
+
+<details><summary>对齐方式</summary>
+
+- **代码**  
+  ```
+  通过在标题行中的连字符的左侧，右侧或两侧添加冒号（:），将列中的文本对齐到左侧，右侧或中心。
+  |左对齐	  |居中    |	 右对齐|
+  |:---|:---:|---:|
+  |col 3 is	  | some wordy text	     |$1600    |
+  |col 2 is    |	centered	      |$12       |
+
+  ```
+- **效果**
+  |左对齐	     |居中                   |	 右对齐         |
+  |:---        |      :---:            |    ---:         |
+  |col 3 is	   | some wordy text	     |$1600            |
+  |col 2 is    |	centered	           |$12              |
 
 
 
