@@ -318,8 +318,12 @@
 
 </details>
 
-<details><summary>混合其他语法</summary>
-
+<details><summary>混合文字加粗、斜体等语法</summary>
+  
+  |**左对齐**	  |居中    |	 右对齐|
+  |:---|:---:|---:|
+  |col 3 is	  | some wordy text	     |$1600    |
+  |col 2 is    |	centered	      |$12       |
 
 </details>
 
