@@ -9,4 +9,4 @@
 - sql学习
 - python学习
 - [算法学习](https://github.com/WXL77/Notes/blob/main/%E7%AE%97%E6%B3%95)
-- [数据降维算法]()
+- [数据降维算法](https://github.com/WXL77/Notes/tree/main/%E6%95%B0%E6%8D%AE%E9%99%8D%E7%BB%B4)
