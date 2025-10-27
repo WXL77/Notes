@@ -63,7 +63,7 @@
     ```
 
 ## [最长连续序列](https://leetcode.cn/problems/longest-consecutive-sequence/description/?envType=study-plan-v2&envId=top-100-liked)
-1. 哈希表
+1. **哈希表**
    ```python
    class Solution:
       def longestConsecutive(self, nums: List[int]) -> int:
@@ -82,7 +82,7 @@
                max_length = max(max_length, current_length)
          return max_length
    ```
-2. 直接排序
+2. **直接排序**
    ```python
    class Solution:
       def longestConsecutive(self, nums: List[int]) -> int:
