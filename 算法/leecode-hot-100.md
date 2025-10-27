@@ -1,5 +1,6 @@
 ## [两数之和](https://leetcode.cn/problems/two-sum/description/?envType=study-plan-v2&envId=top-100-liked)
-1. **双指针+排序**
+1. **双指针+排序**  
+   先构建每个元组为（值，索引）的数组，且按照值升序排列，然后利用双指针，从最左和最右开始不断缩小，找到和=target的两个数停止。
 ```python
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
@@ -19,6 +20,7 @@ class Solution:
         return []
 ```
 2.  **哈希表**
+   
 ```python
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
@@ -30,3 +32,34 @@ class Solution:
             hashtable[nums[i]] = i
         return []
 ```
+
+## [字母异位词分组](https://leetcode.cn/problems/group-anagrams/description/?envType=study-plan-v2&envId=top-100-liked)
+字母异位词指的是字母出现次数完全相同，只是排列顺序不同的字符串。下面两种方法都是基于哈希表：
+1. **排序法**  
+   将字符串按字母排序，异位词排序后相同
+   ```python
+   class Solution:
+       def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
+           from collections import defaultdict
+           groups = defaultdict(list)
+           for s in strs:
+               key = ''.join(sorted(s))
+               groups[key].append(s)
+           return list(groups.values())
+   ```
+2. **计数法**  
+    统计每个字母出现的次数，用一个长度 26 的数组或元组表示。
+    ```python
+    class Solution:
+        def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
+            from collections import defaultdict
+            groups = defaultdict(list)
+            for s in strs:
+                count = [0] * 26
+                for char in s:
+                    count[ord(char) - ord('a')] += 1
+                key = tuple(count)
+                groups[key].append(s)
+            return list(groups.values())
+    ```
+
