@@ -138,6 +138,63 @@
                nums[i], nums[i0] = nums[i0], nums[i]
                i0 += 1
    ```
+## [盛最多水的容器](https://leetcode.cn/problems/container-with-most-water/?envType=study-plan-v2&envId=top-100-liked)
+1. **双指针**
+   ```python
+   class Solution:
+      def maxArea(self, height: List[int]) -> int:
+         left, right = 0, len(height) - 1
+         max_area = 0
+         while left < right:
+            h = min(height[left], height[right])
+            w = right - left
+            area = h * w
+            max_area = max(max_area, area)
+            # 移动较短的线
+            if height[left] < height[right]:
+               left += 1
+            else:
+               right -= 1
+         return max_area
+   ```
+## [三数之和](https://leetcode.cn/problems/3sum/description/?envType=study-plan-v2&envId=top-100-liked)
+1. **双指针**
+   ```python
+   class Solution:
+      def threeSum(self, nums: List[int]) -> List[List[int]]:
+         if len(nums) < 3:
+            return []
+         nums.sort()
+         result = []
+         n = len(nums)
+         for i in range(n - 2):
+            if i > 0 and nums[i] == nums[i - 1]:
+               continue
+            seen = set()
+            for j in range(i + 1, n):
+               complement = -nums[i] - nums[j]
+               if complement in seen:
+                  result.append([nums[i], complement, nums[j]])
+                     while j + 1 < n and nums[j] == nums[j + 1]:
+                        j += 1
+               seen.add(nums[j])
+         return list({tuple(triplet): triplet for triplet in result}.values())
+   ```
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
 
