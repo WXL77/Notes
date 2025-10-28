@@ -101,11 +101,43 @@
                current_length = 1
           return max_length
    ``` 
-
-
-
-
-
+## [移动零](https://leetcode.cn/problems/move-zeroes/description/?envType=study-plan-v2&envId=top-100-liked)
+1. **普通删去0，添加0**
+   ```python
+   class Solution:
+      def moveZeroes(self, nums: List[int]) -> None:
+         zero_count = 0
+         i = 0
+         while i < len(nums):
+            if nums[i] == 0:
+               nums.pop(i)
+               zero_count += 1
+            else:
+               i += 1
+         nums.extend([0] * zero_count)
+   ```
+2. **原地栈**
+   ```python
+   class Solution:
+      def moveZeroes(self, nums: List[int]) -> None:
+         stack_size = 0
+         for x in nums:
+            if x:
+               nums[stack_size] = x  # 把 x 入栈
+               stack_size += 1
+         for i in range(stack_size, len(nums)):
+            nums[i] = 0
+   ```
+3. **双指针+交换元素**
+   ```python
+   class Solution:
+      def moveZeroes(self, nums: List[int]) -> None:
+         i0 = 0
+         for i in range(len(nums)):
+            if nums[i]:
+               nums[i], nums[i0] = nums[i0], nums[i]
+               i0 += 1
+   ```
 
 
 
